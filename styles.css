@@ -115,6 +115,7 @@ h1,h2,h3,.section-title h2,.pin-copy h3,.event-card h3,.cta-inner h2,.rsvp-messa
   font-family:"Donalia",cursive;font-size:30px;color:#fff;margin-bottom:30px;
 }
 .wedding-date{margin-top:6px}
+.cover-hashtag{color:var(--primary); font-size:18px;}
 .scratch-label{margin-bottom:15px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#f7e6ec}
 .scratch-card{
   position:relative;width:min(400px,86vw);height:90px;overflow:hidden;
