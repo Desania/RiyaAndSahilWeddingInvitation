@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Riya & Sahil wedding invitation">
+  <title>Riya &amp; Sahil | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.cdnfonts.com/css/donalia" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Cormorant+Garamond:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="invitation-locked">
+
+  <!-- Opening invitation cover -->
+  <div class="invitation-cover" id="invitationCover" role="dialog" aria-label="Open wedding invitation">
+    <div class="cover-petals" aria-hidden="true">
+      <span>✿</span><span>❀</span><span>✾</span><span>✿</span><span>❀</span><span>✿</span><span>❀</span><span>✿</span>
+      <span>🍃</span><span>🍃</span><span>✿</span><span>❀</span>
+    </div>
+    <div class="cover-content">
+      <p class="cover-kicker">Together with their families</p>
+      <div class="cover-envelope" id="coverEnvelope">
+        <img src="assets/envelope.png" alt="Wedding invitation envelope">
+        <span class="cover-seal-logo"><img src="assets/SR_lOGO.png" alt="Riya &amp; Sahil monogram"></span>
+      </div>
+      <h1>You are Invited</h1>
+      <p class="cover-date">12 September 2026</p>
+      <button class="open-invitation-btn" id="openInvitation" type="button">
+        <span>Open Invitation</span>
+        <span class="open-arrow">♡</span>
+      </button>
+      <p class="cover-hint">Tap to open</p>
+    </div>
+  </div>
+
+  <!-- Background music -->
+  <div id="youtube-bg-music" class="youtube-bg-music" aria-hidden="true">
+    <div id="youtube-player"></div>
+  </div>
+
+  <!-- HERO: full-bleed photographic moment -->
+  <section class="photo-hero" id="home">
+    <div class="photo-hero-bg" style="background-image:url('assets/hero-background.png')"></div>
+    <div class="photo-hero-veil"></div>
+    <div class="container photo-hero-content">
+      <p class="hero-kicker">With the blessings of their grandparents<br class="br-mobile-hide"> Smt. Binder Rani &amp; Sh. Satpal Jindal</p>
+      <div class="hero-monogram"><img src="assets/logo.png" alt="Riya &amp; Sahil"></div>
+      <h1>Riya <span class="amp">&amp;</span> Sahil</h1>
+      <p class="hero-date-script">are tying the knot on</p>
+      <!-- <p class="hero-date-script">Saturday, 12<sup>th</sup> September 2026</p> -->
+
+      <div class="wedding-date">
+        <div class="scratch-label">Scratch to reveal the date</div>
+        <div class="scratch-card" id="scratchCard">
+          <div class="date-reveal">
+            <span class="day">12</span>
+            <span class="month">September</span>
+            <span class="year">2026</span>
+          </div>
+          <canvas id="scratchCanvas"></canvas>
+        </div>
+        <button id="revealDateBtn" class="date-link" type="button">Reveal date</button>
+      </div>
+
+      <div class="clock-grids">
+        <div class="clock-box clock-box-1"><strong id="days">00</strong><span>Days</span></div>
+        <div class="clock-box clock-box-2"><strong id="hours">00</strong><span>Hours</span></div>
+        <div class="clock-box clock-box-3"><strong id="minutes">00</strong><span>Mins</span></div>
+        <div class="clock-box clock-box-4"><strong id="seconds">00</strong><span>Secs</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll-cue" aria-hidden="true"><span></span>Scroll</div>
+  </section>
+
+  <!-- COUPLE -->
+  <section class="couple-section section-pad" id="couple">
+    <img src="assets/branch-1.png" class="couple-flower couple-flower-left" alt="">
+    <img src="assets/branch-2.png" class="couple-flower couple-flower-right" alt="">
+    <div class="container narrow couple-content">
+      <div class="section-title">
+        <div class="title-icon">♡</div>
+        <h2>The Couple</h2>
+        <p>Two Hearts, One Story</p>
+      </div>
+
+      <div class="couple-grid">
+        <div class="couple-card">
+          <div class="couple-card-photo"><img src="assets/riya.jpg" alt="Riya"></div>
+          <div class="couple-card-body">
+            <h3>Riya</h3>
+            <p class="couple-kin">D/o Mrs. Raj Rani &amp; Mr. Parshotam Dass</p>
+            <div class="pink-line center"></div>
+            <p>Beautiful from the heart, graceful in every little thing, she brings warmth, joy and kindness wherever she goes. Her beautiful smile, caring nature and loving heart make every moment around her feel truly special.</p>
+          </div>
+        </div>
+
+        <div class="couple-card alt">
+          <div class="couple-card-photo"><img src="assets/sahil.jpg" alt="Sahil"></div>
+          <div class="couple-card-body">
+            <h3>Sahil Garg</h3>
+            <p class="couple-kin">S/o Mrs. Geeta Rani &amp; Late Sh. Surinder Kumar Garg, Sangrur</p>
+            <div class="pink-line center"></div>
+            <p>Warm, caring and full of quiet joy, Sahil has always believed the simplest moments are worth remembering. With a kind heart and a gentle smile, he found the person who makes every day brighter.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- MOMENTS GALLERY -->
+  <section class="gallery-section section-pad" id="moments">
+    <!-- <img src="assets/floral-arch-1.png" class="gallery-corner gallery-corner-left" alt=""> -->
+    <!-- <img src="assets/floral-arch-2.png" class="gallery-corner gallery-corner-right" alt=""> -->
+    <div class="container">
+      <div class="section-title">
+        <div class="title-icon">❀</div>
+        <h2>A Few Sweet Moments</h2>
+        <p>Blessed &amp; Beautiful</p>
+      </div>
+
+      <div class="gallery-masonry" id="galleryMasonry">
+        <figure class="gallery-item"><img src="assets/gallery-1.jpg" alt="Riya and Sahil" loading="lazy"></figure>
+        <figure class="gallery-item"><img src="assets/story-1.jpg" alt="Riya and Sahil" loading="lazy"></figure>
+        <figure class="gallery-item"><img src="assets/gallery-2.jpg" alt="Riya and Sahil" loading="lazy"></figure>
+        <figure class="gallery-item"><img src="assets/event-card.jpg" alt="Riya and Sahil" loading="lazy"></figure>
+        <figure class="gallery-item"><img src="assets/image-17.png" alt="Riya and Sahil" loading="lazy"></figure>
+        <figure class="gallery-item"><img src="assets/image-16.png" alt="Riya and Sahil with family" loading="lazy"></figure>
+        <figure class="gallery-item"><img src="assets/gallery-4.jpg" alt="Riya and Sahil" loading="lazy"></figure>
+        <figure class="gallery-item"><img src="assets/cta-bg.jpg" alt="Riya and Sahil" loading="lazy"></figure>
+        <figure class="gallery-item"><img src="assets/image-18.png" alt="Riya and Sahil family" loading="lazy"></figure>
+        <figure class="gallery-item"><img src="assets/image-19.png" alt="Riya and Sahil" loading="lazy"></figure>
+      </div>
+      <p class="gallery-hint">Tap a photo to look closer</p>
+    </div>
+  </section>
+
+  <!-- Gallery lightbox -->
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <div class="lightbox-backdrop" data-close-lightbox></div>
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close">×</button>
+    <button class="lightbox-nav prev" id="lightboxPrev" type="button" aria-label="Previous photo">‹</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+    <button class="lightbox-nav next" id="lightboxNext" type="button" aria-label="Next photo">›</button>
+  </div>
+
+  <!-- PARALLAX -->
+  <section class="wpo-video-section parallax-section" style="background-image:url('assets/parallax-bg.jpg')">
+    <div class="parallax-overlay">
+      <div class="small-dove">♡</div>
+      <h2>Riya <span>Weds</span> Sahil</h2>
+      <p>12 September 2026 · Sangrur</p>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="story-section section-pad" id="story">
+    <div class="container">
+      <div class="section-title">
+        <div class="title-icon">♡</div>
+        <h2>Our Sweet Story</h2>
+      </div>
+
+      <div class="pin-timeline">
+        <div class="pin-line"></div>
+
+        <article class="pin-item">
+          <div class="pin-photo"><img src="assets/story-1.jpg" alt="Riya and Sahil"></div>
+          <div class="pin-badge"><span>The Beginning</span></div>
+          <div class="pin-copy">
+            <h3>First, a Little Thought</h3>
+            <div class="line-shape"></div>
+            <p>Two people, two little thoughts — and slowly, they began finding their way into each other's hearts.</p>
+          </div>
+        </article>
+
+        <article class="pin-item reverse">
+          <div class="pin-photo"><img src="assets/story-2.jpg" alt="Roka ceremony with family"></div>
+          <div class="pin-badge"><span>Together As Families</span></div>
+          <div class="pin-copy">
+            <h3>Roka &amp; Blessings</h3>
+            <div class="line-shape"></div>
+            <p>With blessings, laughter and happy hearts, both families came together and made their promise official.</p>
+          </div>
+        </article>
+
+        <article class="pin-item">
+          <div class="pin-photo"><img src="assets/story-3.jpg" alt="Riya and Sahil before their wedding"></div>
+          <div class="pin-badge"><span>12 September 2026</span></div>
+          <div class="pin-copy">
+            <h3>The Wedding Is Coming Soon</h3>
+            <div class="line-shape"></div>
+            <p>The next chapter is almost here. On 12 September, their forever officially begins in Sangrur.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="wpo-cta-section" style="background-image:linear-gradient(rgba(46,32,58,.55),rgba(46,32,58,.55)),url('assets/cta-bg.jpg')">
+    <div class="cta-inner">
+      <div class="title-icon white">♡</div>
+      <h2>Let's Celebrate Their Love</h2>
+      <a class="theme-btn" href="#events">Join With Us</a>
+    </div>
+  </section>
+
+  <!-- WITH LOVE THE FAMILIES -->
+  <section class="families-section section-pad" id="families">
+    <!-- <img src="assets/branch-1.png" class="section-shape left-shape light-side" alt=""> -->
+    <!-- <img src="assets/branch-2.png" class="section-shape right-shape light-side" alt=""> -->
+    <div class="container narrow">
+      <div class="section-title">
+        <div class="title-icon">♡</div>
+        <h2>With Love</h2>
+        <p>The Families</p>
+      </div>
+      <div class="family-grid four">
+        <div class="family-card">
+          <div class="family-flower">❀</div>
+          <h3>Riya's Family</h3>
+          <p>Daughter of</p>
+          <p class="family-parents-line">Mrs. Raj Rani<br>Mr. Parshotam Dass</p>
+          <p>With love, blessings and the happiest wishes for Riya &amp; Sahil as they begin their forever together.</p>
+        </div>
+        <div class="family-card">
+          <div class="family-flower">❀</div>
+          <h3>Sahil's Family</h3>
+          <p>Son of</p>
+          <p class="family-parents-line">Mrs. Geeta Rani<br>Late Sh. Surinder Kumar Garg</p>
+          <p>With warm hearts and happy smiles, we welcome this beautiful new chapter into our family.</p>
+        </div>
+        <div class="family-card">
+          <div class="family-flower">❀</div>
+          <h3>R.S.V.P.</h3>
+          <ul class="family-list">
+            <li>Kanta – Makhan Lal</li>
+            <li>Sunita – Bhola Ram</li>
+            <li>Meena – Sushil Kumar</li>
+            <li>Kamlesh – Sunil Jindal</li>
+            <li>Diksha – Nitish Jindal</li>
+            <li>Yashika – Ravi Garg</li>
+            <li>Aman – Pankush Jindal</li>
+          </ul>
+        </div>
+        <div class="family-card">
+          <div class="family-flower">❀</div>
+          <h3>W.B.C.F.</h3>
+          <ul class="family-list">
+            <li>Anu – Shashi Pal Singla</li>
+            <li>Sipia – Ravi Singla</li>
+            <li>All Relatives &amp; Friends</li>
+          </ul>
+          <p class="family-sub-title">Family Flowers</p>
+          <ul class="family-list">
+            <li>Mounir, Rudhvik</li>
+          </ul>
+        </div>
+      </div>
+      <p class="grandparents-note">Cordially hosted by grandparents, Smt. Binder Rani &amp; Sh. Satpal Jindal</p>
+    </div>
+  </section>
+
+  <!-- SIMPLE RSVP CTA -->
+  <section class="wpo-contact-section blue-floral section-pad" id="rsvp">
+    <img src="assets/branch-blue-3.png" class="rsvp-line-art rsvp-line-left" alt="">
+    <img src="assets/branch-blue-4.png" class="rsvp-line-art rsvp-line-right" alt="">
+    <div class="container">
+      <div class="rsvp-mylove">
+        <img src="assets/floral-arch-blue-1.png" class="rsvp-flower rsvp-flower-top" alt="">
+        <img src="assets/floral-arch-blue-2.png" class="rsvp-flower rsvp-flower-bottom" alt="">
+
+        <div class="rsvp-paper">
+          <div class="section-title">
+            <div class="title-icon">♡</div>
+            <h2>Are You Attending?</h2>
+          </div>
+          <div class="rsvp-message">
+            <div class="script">Warm wishes mean the world to us</div>
+            <p>Your presence, blessings and kind words will make our celebration even more special.</p>
+            <a class="theme-btn" href="#events">See Wedding Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section class="events-section" id="events">
+    <div class="events-heading" style="background-image:linear-gradient(rgba(190,120,148,.72),rgba(111,152,204,.72)),url('assets/cta-bg.png')">
+      <div class="section-title">
+        <div class="title-icon">♡</div>
+        <h2>When &amp; Where</h2>
+      </div>
+    </div>
+
+    <div class="container events-content">
+      <div class="events-grid">
+        <article class="event-card">
+          <div class="event-card-photo"><img src="assets/event-card.jpg" alt="Reception of Barat"></div>
+          <div class="event-card-body">
+            <div class="event-flower">❀</div>
+            <h3>Reception of Barat</h3>
+            <ul>
+              <li><strong>Saturday, 12 September 2026</strong></li>
+              <li>Time — 08:00 PM onwards</li>
+              <li>Spangle Stone, Dhuri Road,<br>Opp. Saffron Palms, Sangrur, Punjab</li>
+            </ul>
+            <div class="event-actions">
+              <a class="theme-btn small" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Spangle+Stone%2C+Dhuri+Road%2C+Opp.+Saffron+Palms%2C+Sangrur%2C+Punjab">Get Directions</a>
+              <a class="theme-btn outline small" href="#" data-calendar data-title="Riya Weds Sahil — Reception of Barat" data-start="20260912T200000" data-end="20260913T000000">Add to Calendar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <div class="event-card-photo"><img src="assets/story-3.jpg" alt="Doli"></div>
+          <div class="event-card-body">
+            <div class="event-flower">✿</div>
+            <h3>Doli</h3>
+            <ul>
+              <li><strong>Sunday, 13 September 2026</strong></li>
+              <li>Time — 05:00 AM onwards</li>
+              <li>Spangle Stone, Dhuri Road,<br>Opp. Saffron Palms, Sangrur, Punjab</li>
+            </ul>
+            <div class="event-actions">
+              <a class="theme-btn small" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Spangle+Stone%2C+Dhuri+Road%2C+Opp.+Saffron+Palms%2C+Sangrur%2C+Punjab">Get Directions</a>
+              <a class="theme-btn outline small" href="#" data-calendar data-title="Riya Weds Sahil — Doli" data-start="20260913T050000" data-end="20260913T080000">Add to Calendar</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="map-box">
+        <div class="map-caption"><span>Spangle Stone</span><small>Dhuri Road, Opp. Saffron Palms, Sangrur, Punjab</small></div>
+        <iframe title="Spangle Stone Sangrur" src="https://www.google.com/maps?q=Spangle%20Stone%2C%20Dhuri%20Road%2C%20Opp.%20Saffron%20Palms%2C%20Sangrur%2C%20Punjab&output=embed" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="wpo-site-footer">
+    <div class="footer-inner">
+      <div class="footer-heart">♡</div>
+      <h2>Riya &amp; Sahil</h2>
+      <p>12 September 2026 · Sangrur</p>
+      <div class="footer-line"></div>
+      <small>Made with love for our forever #RiyaSahil | Designed &amp; Developed by <button class="desania-link" id="desaniaLink" type="button">Desania Garg</button></small>
+    </div>
+  </footer>
+
+  <!-- Floating music control -->
+  <button class="music-toggle" id="musicToggle" type="button" aria-label="stop background music" aria-pressed="false">
+    <span class="music-icon" aria-hidden="true">♫</span>
+    <span class="music-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+  </button>
+
+  <!-- Designer contact popup -->
+  <div class="designer-modal" id="designerModal" role="dialog" aria-modal="true" aria-labelledby="designerTitle" hidden>
+    <div class="designer-backdrop" data-close-designer></div>
+    <div class="designer-card">
+      <button class="designer-close" id="designerClose" type="button" aria-label="Close">×</button>
+      <div class="designer-icon">♡</div>
+      <p class="designer-kicker">Wedding Website Specialist</p>
+      <h2 id="designerTitle">Desania Garg</h2>
+      <div class="designer-divider"></div>
+      <p class="designer-copy">Want a beautiful, personalised wedding website for your special day?</p>
+      <p class="designer-role">Marketing &amp; Wedding Website Development</p>
+      <div class="designer-contact">
+        <a href="tel:+917973406533"><span>☎</span> 7973406533</a>
+        <a href="mailto:gargdesania@gmail.com"><span>✉</span> gargdesania@gmail.com</a>
+      </div>
+      <p class="designer-location">Web Developer · Bathinda, Punjab</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
