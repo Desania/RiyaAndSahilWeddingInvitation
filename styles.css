@@ -525,7 +525,7 @@ body.modal-open{overflow:hidden}
   .section-title{margin-bottom:38px}
   .section-title h2{font-size:38px}
 
-  .photo-hero-content{padding:120px 0 60px}
+  .photo-hero-content{padding:50px 0 60px}
   .photo-hero-content h1{font-size:48px}
   .hero-date-script{font-size:24px}
   .hero-kicker{font-size:10px}
@@ -561,7 +561,8 @@ body.modal-open{overflow:hidden}
 
   .rsvp-line-left{left:-120px;top:180px;width:220px}
   .rsvp-line-right{right:-120px;top:180px;width:220px}
-  .rsvp-mylove{max-width:94vw;min-height:500px;margin-top:135px}
+  .rsvp-mylove{max-width:94vw;min-height:500px;margin-top:135px;
+  margin: 100px auto 50px;}
   .rsvp-paper{top:85px;width:500px;padding:62px 24px 48px}
   .rsvp-paper .section-title h2{font-size:36px}
   .rsvp-flower{width:430px;max-width:95vw}
